@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script defer src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css" type="text/css"/>
+</head>
+<body>
+    <div class="window-wrapper">
+        <div class="window-title">
+            <div class="title">
+                <span>Chatroom</span>
+            </div>
+        </div>
+        <div class="window-area">
+            <div class="conversation-list">
+                <ul class="">
+        <li class="item"><a href="#"><span>Учасники</span></a></li>
+                </ul>
+                <div class="account">
+                    <div class="image">
+                        <img src="">
+                    </div>
+                    <div class="name"></div>
+                </div>
+            </div>
+            <div class="chat-area">
+                <div class="chat-list">
+                    <ul>
+                        <li class="me">
+                            <div class="name">
+                                <span class=""></span>
+                            </div>
+                            <div class="message">
+                                <p></p>
+                                <span class="msg-time"></span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="input-area">
+                    <form id="input-wrapper">
+                        <input type="text" placeholder="Message" id="message-input">
+                        <button type="submit" class="send-btn">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
