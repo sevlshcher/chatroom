@@ -50,10 +50,14 @@ body{
 	top: 0;
 	bottom: 0;
 }
+ul li{
+	list-style: none
+}
+
 .chat-area ul{
 	margin-right: -4px;
 }
-.input-area{
+.input-area {
 	background: #e4eaee;
 	padding: 6px;
 	overflow: hidden;
@@ -116,4 +120,73 @@ body{
 	margin-left: auto;
 	color: #fff;
 	border-radius: 7px;
+}
+.modal {
+	position: fixed;
+	top: 5%;
+	left: 40%;
+    width: 380px;
+	height: 520px;
+	z-index: 100;
+	display: block;
+    border-radius: 7 px;
+}
+
+.header {
+    display: flex;
+    padding: 2%;
+    background-color: #ff8663;
+    height: 30px;
+    justify-content: space-between;
+    border-radius: 7px 7px 0 0;
+    align-items: center;
+}
+.modal__header {
+	color: #333333;
+	padding: 0 10px;
+    font-size: 15pt;
+}
+
+.close {
+    position: absolute;
+    top: 7px;
+    right: 10px;
+    font-size: 32px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+.input-area-modal{
+	background: #e4eaee;
+	height: 102px;
+	padding: 6px;
+	overflow: hidden;
+	position: absolute;
+	left: 0;
+	right: 0;
+	border-top: 1px solid #cfdae1;
+	border-radius: 0 0 7px 7px;
+}
+.input-modal {
+	height: 30px;
+	line-height: 30px;
+	border: 1px solid #cfdae1;
+	border-radius: 5px;
+	margin: 0;
+	padding: 0 10px;
+	outline: none;
+	color: #5D7185;
+	width: 94%;
+}
+.login-btn {
+	position: absolute;
+	right: 0;
+	bottom: 7px;
+	border: none;
+    outline: none;
+    width: 87px;
+    height: 30px;
+    background-color: #ff8663;
+    margin-right: 3%;
+    color: #fff;
+    border-radius: 7px;
 }

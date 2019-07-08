@@ -11,6 +11,19 @@
 </head>
 <body>
     <div class="window-wrapper">
+        <div class="modal">
+            <header class="header">
+                <div class="modal__header">Authorization</div>
+                <div class="close">+</div>
+            </header>
+            <div class="input-area-modal">
+                <form id="input-wrapper-modal">
+                        <input class="input-modal" placeholder="Fullname" id="fullname"><br>
+                        <input class="input-modal" placeholder="Nickname" id="nickname"><br>
+                        <button type="submit" class="login-btn">Log in</button>
+                </form>
+            </div>
+        </div>
         <div class="window-title">
             <div class="title">
                 <span>Chatroom</span>
@@ -18,15 +31,8 @@
         </div>
         <div class="window-area">
             <div class="conversation-list">
-                <ul class="">
-        <li class="item"><a href="#"><span>Учасники</span></a></li>
-                </ul>
-                <div class="account">
-                    <div class="image">
-                        <img src="">
-                    </div>
-                    <div class="name"></div>
-                </div>
+                <h3>Users</h3>
+                <ul class="usersOn"></ul>
             </div>
             <div class="chat-area">
                 <div class="chat-list">
